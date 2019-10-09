@@ -15,6 +15,4 @@
 └─fuzzer_main.py                脚本入口    
 
 ```
-## 初版Fuzzer设计思路
 
-![Alt text](http://192.168.18.223:8888/media/Fuzzer.jpg)
