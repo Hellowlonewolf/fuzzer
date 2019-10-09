@@ -1,0 +1,8 @@
+##ignore this file##
+/target/
+.idea
+__pycache__
+.pyc
+.pytest_cache
+*.log
+*.xls

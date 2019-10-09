@@ -1,0 +1,41 @@
+[
+    {
+        "config": {
+            "name": "testcase description",
+            "variables": {}
+        }
+    },
+    {
+        "test": {
+            "name": "/forbid/GetForbidInfo",
+            "request": {
+                "url": "http://192.168.5.123:31346/forbid/GetForbidInfo",
+                "method": "POST",
+                "headers": {
+                    "Logical-Region-Id": "1020",
+                    "Content-Type": "application/json",
+                    "User-Agent": "PostmanRuntime/7.17.1",
+                    "Postman-Token": "903899cc-003d-44a2-9422-fd25fc1dfdd4"
+                },
+                "json": {
+                    "page": 1,
+                    "limit": 10
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "text/plain; charset=utf-8"
+                    ]
+                }
+            ]
+        }
+    }
+]
